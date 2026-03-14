@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Ai Health Lifestyle | Intelligent Wellness</title>
+    <meta name="description" content="AI That Understands Your Health & Lifestyle. Personalized analysis for sleep, habits, and mental wellness.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- --- Navbar --- -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i data-lucide="flower-2"></i>
+                <span class="full-logo">Sakura Ai Health Lifestyle</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#insights">AI Insights</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="btn btn-primary">Start Analysis</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --- Hero Section --- -->
+    <section class="hero">
+        <div class="hero-bg-visual"></div>
+        <div class="sakura-particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content fade-up">
+                <h1 class="gradient-text">AI That Understands Your Health & Lifestyle</h1>
+                <p>Your personal AI wellness coach that analyzes sleep, screen time, habits, and lifestyle to help you live healthier.</p>
+                
+                <div class="playstore-badge" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0,0,0,0.05); padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 600; color: var(--sakura-deep);">
+                    <i data-lucide="play"></i>
+                    <span>Soon Available in Playstore</span>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap;">
+                    <a href="#" class="btn btn-primary">Start Free AI Analysis <i data-lucide="sparkles"></i></a>
+                    <a href="#dashboard" class="btn btn-outline">View AI Demo <i data-lucide="play-circle"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-3d-figure">
+            <img src="assets/3d-avatar.png" alt="3D AI Coach" class="parallax-3d" data-speed="2">
+        </div>
+
+        <div class="hero-floating">
+            <div class="float-card glass" style="top: 0; right: -50px; padding: 2rem; width: 300px;">
+                <h4 style="margin-bottom: 1rem;">Daily Health Score</h4>
+                <div style="height: 10px; background: #eee; border-radius: 5px; overflow: hidden;">
+                    <div style="width: 85%; height: 100%; background: var(--sakura-deep);"></div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">You're doing 12% better than yesterday!</p>
+            </div>
+            <div class="float-card glass" style="bottom: 100px; left: -100px; padding: 2rem; width: 280px; animation-delay: -3s;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="background: #E6FFFA; color: #38B2AC; padding: 0.5rem; border-radius: 12px;">
+                        <i data-lucide="moon"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 1rem;">Sleep Quality</h4>
+                        <p style="font-size: 1.1rem; font-weight: 700;">8h 24m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Features Section --- -->
+    <section id="features" class="section-padding">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto; margin-bottom: 4rem;" class="fade-up">
+                <h2 style="font-size: 3.5rem; margin-bottom: 1rem;">Intelligence for Your Well-being</h2>
+                <p style="color: var(--text-secondary); font-size: 1.2rem;">Our advanced AI models process your lifestyle data to provide actionable, calming, and scientifically-backed health insights.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card glass-dark fade-up" style="border-radius: 32px; border: 1px solid #f0f0f0;">
+                    <div class="feature-icon"><i data-lucide="brain"></i></div>
+                    <h3>AI Health Coach</h3>
+                    <p style="color: var(--text-secondary);">Your personal wellness companion available 24/7 to answer questions and guide your habits.</p>
+                </div>
+                <!-- 3D Figure between cards -->
+                <div class="feature-card3d fade-up" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/3d-wellness.png" alt="3D Objects" style="width: 100%; max-width: 300px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));" class="float-slow">
+                </div>
+                <div class="feature-card glass-dark fade-up" style="border-radius: 32px; border: 1px solid #f0f0f0; transition-delay: 0.1s;">
+                    <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Screen Time Analysis</h3>
+                    <p style="color: var(--text-secondary);">Understand how digital consumption impacts your mental clarity and sleep cycles.</p>
+                </div>
+                <div class="feature-card glass-dark fade-up" style="border-radius: 32px; border: 1px solid #f0f0f0;">
+                    <div class="feature-icon"><i data-lucide="moon"></i></div>
+                    <h3>Sleep Intelligence</h3>
+                    <p style="color: var(--text-secondary);">Deep analysis of circadian rhythms and suggestions for optimized rest recovery.</p>
+                </div>
+                <div class="feature-card glass-dark fade-up" style="border-radius: 32px; border: 1px solid #f0f0f0; transition-delay: 0.1s;">
+                    <div class="feature-icon"><i data-lucide="activity"></i></div>
+                    <h3>Habit Tracking AI</h3>
+                    <p style="color: var(--text-secondary);">Effortlessly track progress and receive gentle nudges when you deviate from goals.</p>
+                </div>
+                <div class="feature-card glass-dark fade-up" style="border-radius: 32px; border: 1px solid #f0f0f0; transition-delay: 0.2s;">
+                    <div class="feature-icon"><i data-lucide="zap"></i></div>
+                    <h3>Lifestyle Optimization</h3>
+                    <p style="color: var(--text-secondary);">Customized daily routines that adapt to your energy levels and schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Dashboard Preview --- -->
+    <section id="dashboard" class="section-padding" style="background: #fafafa;">
+        <div class="container text-center">
+            <h2 style="font-size: 3.5rem; margin-bottom: 2rem; text-align: center;" class="fade-up">The Future of Health Dashboards</h2>
+            <div class="dashboard-preview-container fade-up">
+                <img src="assets/dashboard.png" alt="Sakura AI Dashboard" class="dashboard-img">
+                <div class="glass" style="position: absolute; bottom: 40px; right: 40px; padding: 2.5rem; max-width: 400px; text-align: left;">
+                    <p style="font-weight: 700; font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--sakura-deep);">Weekly AI Recommendations</p>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.2rem;">
+                        <li style="display: flex; gap: 12px; font-size: 1rem;"><i data-lucide="check-circle" style="color: var(--sakura-deep);"></i> Reduce evening blue light by 15%</li>
+                        <li style="display: flex; gap: 12px; font-size: 1rem;"><i data-lucide="check-circle" style="color: var(--sakura-deep);"></i> Aim for 20min meditation at 4 PM</li>
+                        <li style="display: flex; gap: 12px; font-size: 1rem;"><i data-lucide="check-circle" style="color: var(--sakura-deep);"></i> Increase water intake by 500ml</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- How It Works --- -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 style="font-size: 3.5rem; text-align: center; margin-bottom: 4rem;" class="fade-up">Simple. Seamless. Zen.</h2>
+            <div class="timeline">
+                <div class="timeline-step fade-up">
+                    <div class="step-num">1</div>
+                    <div>
+                        <h3>Connect Your Lifestyle Data</h3>
+                        <p style="color: var(--text-secondary);">Securely sync with Apple Health, WHOOP, or manually input habits.</p>
+                    </div>
+                </div>
+                <div class="timeline-step fade-up">
+                    <div class="step-num">2</div>
+                    <div>
+                        <h3>AI Analyzes Patterns</h3>
+                        <p style="color: var(--text-secondary);">Our proprietary models look for correlations between habits and results.</p>
+                    </div>
+                </div>
+                <div class="timeline-step fade-up">
+                    <div class="step-num">3</div>
+                    <div>
+                        <h3>AI Generates Insights</h3>
+                        <p style="color: var(--text-secondary);">Receive professional-grade reports and daily wellness coaching.</p>
+                    </div>
+                </div>
+                <div class="timeline-step fade-up">
+                    <div class="step-num">4</div>
+                    <div>
+                        <h3>Improve Health Daily</h3>
+                        <p style="color: var(--text-secondary);">Small adjustments lead to massive lifestyle improvements over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- AI Insights Examples --- -->
+    <section id="insights" class="section-padding" style="background: var(--sakura-light);">
+        <div class="container text-center">
+            <h2 style="font-size: 3.5rem; text-align: center; margin-bottom: 4rem;">Insights That Matter</h2>
+            <div class="insights-grid">
+                <div class="insight-bubble glass fade-up" style="background: white;">
+                    <p>"Your screen time increased <span style="color: var(--sakura-deep); font-weight: 700;">21%</span> this week. This correlates with a 15% drop in deep sleep."</p>
+                </div>
+                <div class="insight-bubble glass fade-up" style="background: white; transition-delay: 0.1s;">
+                    <p>"You sleep better on days with less evening phone use. Suggesting a <span style="color: var(--sakura-deep); font-weight: 700;">Digital Sunset</span> at 9:00 PM."</p>
+                </div>
+                <div class="insight-bubble glass fade-up" style="background: white; transition-delay: 0.2s;">
+                    <p>"Reducing social media by 30 minutes may improve <span style="color: var(--sakura-deep); font-weight: 700;">sleep quality</span> by up to 25%."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Interactive Demo --- -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="chat-demo glass fade-up" style="border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 30px 60px -12px rgba(0,0,0,0.1);">
+                <div class="chat-header" style="padding: 2rem;">
+                    <i data-lucide="sparkles"></i>
+                    <span style="font-weight: 700;">Sakura AI Wellness Chat</span>
+                </div>
+                <div class="chat-body" id="chat-body" style="height: 450px; padding: 2.5rem;">
+                    <div class="msg msg-ai">Hi! I'm your Sakura AI Health companion. How are you feeling today?</div>
+                    <div class="msg msg-user">Why am I tired today even though I slept 8 hours?</div>
+                    <div class="msg msg-ai">Looking at your data, your deep sleep (REM) was 40% lower than usual. This seems to be because of high blue-light exposure 45 minutes before sleep last night.</div>
+                </div>
+                <div style="padding: 2rem; background: #fafafa; display: flex; gap: 1rem;">
+                    <input type="text" placeholder="Type a message..." style="flex: 1; padding: 1.25rem; border-radius: 50px; border: 1px solid #ddd; outline: none; font-size: 1rem;">
+                    <button class="btn btn-primary" style="padding: 1rem 1.5rem;"><i data-lucide="send"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Final CTA --- -->
+    <section class="section-padding" style="background: linear-gradient(135deg, var(--sakura-deep), var(--accent)); color: white; position: relative; overflow: hidden;">
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <h2 style="font-size: 4.5rem; margin-bottom: 2rem;">Start Your AI Health Journey Today</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">Take the first step towards a balanced digital life.</p>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem;">
+                <a href="#" class="btn btn-primary" style="background: white; color: var(--sakura-deep); font-size: 1.25rem; padding: 1.5rem 3rem;">Try AI Free <i data-lucide="sparkles"></i></a>
+            </div>
+            
+            <div class="playstore-badge" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.2); padding: 0.75rem 2rem; border-radius: 50px; font-weight: 600; color: white; border: 1px solid rgba(255,255,255,0.3);">
+                <i data-lucide="play"></i>
+                <span>Soon Available in Playstore</span>
+            </div>
+        </div>
+        <div class="hero-bg-visual" style="opacity: 0.3; filter: blur(100px); top: 0; left: 0; width: 100%; height: 100%;"></div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer>
+        <div class="container">
+            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 4rem;">
+                <div class="logo" style="margin-bottom: 2rem; font-size: 2rem;">
+                    <i data-lucide="flower-2"></i>
+                    <span class="full-logo">Sakura Ai Health Lifestyle</span>
+                </div>
+                <p style="color: var(--text-secondary); max-width: 600px; margin-bottom: 2rem;">The world's first AI-powered wellness platform designed for the modern lifestyle. Minimalist, intelligent, and human.</p>
+                
+                <div class="footer-socials" style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="twitter"></i></a>
+                    <a href="#" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="instagram"></i></a>
+                    <a href="#" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid #eee; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; color: var(--text-secondary); font-size: 0.9rem; flex-wrap: wrap; gap: 1rem;">
+                <p>&copy; 2026 Sakura Ai Health Lifestyle. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
